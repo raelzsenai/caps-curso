@@ -10,6 +10,7 @@ body {
     background-color: #f0f0f0;
 }
 
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -65,7 +66,7 @@ header nav ul li a:hover {
 
 .hero p {
     font-size: 18px;
-    text-align: justify;
+    text-align: center;
 }
 
 /* Estilos da seção de artigos */
