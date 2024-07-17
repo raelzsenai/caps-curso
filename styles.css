@@ -59,10 +59,9 @@ header nav ul li a:hover {
 }
 
 .hero h2 {
-    font-size: 36px;
+    font-size: 3em;
     margin-bottom: 20px;
     text-align: center;
-    text-decoration: underline;
 }
 
 .hero p {
