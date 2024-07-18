@@ -51,6 +51,15 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
+header div.imagem {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+div.imagem img {
+    
+}
+
 /* Estilos da seção principal */
 .hero {
     background-color: #007bff;
