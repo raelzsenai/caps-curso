@@ -56,15 +56,15 @@ header div.imagem {
     flex-direction: row-reverse;
 }
 
-div.imagem img {
-    
-}
 
 /* Estilos da seção principal */
 .hero {
     background-color: #007bff;
     color: #fff;
     padding: 60px 0;
+    background-image: url("testing-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .hero h2 {
