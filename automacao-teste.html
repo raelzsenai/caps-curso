@@ -10,6 +10,16 @@
         body, html {
             margin: 0;
         }
+
+        code {
+            font-family: "Courier New", Courier, monospace;
+            color: rgb(171, 119, 253);
+            background-color: #333333;
+            padding: 2px 4px;
+            border-radius: 4px;
+            display: block;
+            white-space: pre;
+        }
     </style>
 </head>
 <body>
@@ -49,6 +59,128 @@
             
             <p>Mais informações sobre esta ferramenta e como incluí-la no projeto podem ser obtidos na <a href="https://www.seleniumhq.org/">página oficial do Selenium.</a></p>
             
+            <h3>Exemplo de teste com Selenium neste mesmo site</h3>
+
+            <img src="TesteCabecalho.jpg" alt="Teste selenium" style="flex: content;" width="1050px">
+
+            <h3>Introdução</h3>
+            <p>A automação de testes é uma prática essencial no desenvolvimento de software moderno, permitindo a verificação contínua e eficiente da funcionalidade do código. PHPUnit é uma das ferramentas mais populares para testes automatizados em PHP, facilitando a criação e execução de testes de unidade.</p>
+
+            <h3>O que é PHPUnit?</h3>
+            <p>PHPUnit é um framework de testes unitários para a linguagem de programação PHP. Ele permite aos desenvolvedores escrever testes automatizados que verificam se o código PHP está funcionando conforme o esperado. É uma ferramenta poderosa que suporta o desenvolvimento orientado a testes (TDD) e integra-se bem com outros frameworks e ferramentas de desenvolvimento.</p>
+
+            <h3>Benefícios da Automação de Testes com PHPUnit</h3>
+            <ul>
+                <li>Detecção precoce de defeitos: Identifica problemas no código nas fases iniciais do desenvolvimento.</li>
+                <li>Manutenção facilitada: Testes automatizados facilitam a refatoração e a manutenção do código.</li>
+                <li>Confiabilidade: Garantia de que novas funcionalidades não quebrem o código existente.</li>
+                <li>Eficiência: Testes podem ser executados rapidamente e repetidamente.</li>
+            </ul>
+
+            <h3>Instalação do PHPUnit</h3>
+            <p>Para começar a usar o PHPUnit, você pode instalá-lo via Composer, o gerenciador de dependências do PHP. Execute o seguinte comando para instalar o PHPUnit globalmente:</p>
+
+            <p style="text-decoration: underline;">composer global require phpunit/phpunit</p>
+
+            <p>Ou adicione ao seu projeto específico:</p>
+
+            <p style="text-decoration: underline;">composer require --dev phpunit/phpunit</p>
+
+            <h3>Estrutura de um teste com PHPUnit</h3>
+            <p>Um teste de unidade com PHPUnit geralmente envolve a criação de uma classe de teste que estende a classe base PHPUnit\Framework\TestCase. Cada método na classe de teste representa um caso de teste individual.</p>
+
+            <code>
+                    ?php
+                    
+                    use PHPUnit\Framework\TestCase;
+                    class ExampleTest extends TestCase
+                    {
+                        public function testAddition()
+                        {
+                            $this->assertEquals(4, 2 + 2);
+                        }
+                    }
+            </code>
+
+            <h3>Executando testes com PHPUnit</h3>
+            <p>Para executar os testes, você pode usar o comando PHPUnit no terminal. Navegue até o diretório do seu projeto e execute:</p>
+
+            <p style="text-decoration: underline;">phpunit --bootstrap vendor/autoload.php tests</p>
+
+            <p>Este comando irá executar todos os testes dentro do diretório tests.</p>
+
+            <h3>Tipos de testes suportados</h3>
+            <p>PHPUnit suporta vários tipos de testes, incluindo:</p>
+            <ul>
+                <li>Testes de Unidade: Verificam o funcionamento de partes isoladas do código.</li>
+                <li>Testes de Integração: Testam a interação entre diferentes componentes do sistema.</li>
+                <li>Testes Funcionais: Avaliam funcionalidades completas de uma aplicação.</li>
+            </ul>
+            
+            <h3>Estruturas comuns em PHPUnit</h3>
+            <p>PHPUnit oferece várias estruturas e funcionalidades úteis para escrever testes eficazes, como:</p>
+            <ul>
+                <li>Fixtures: Métodos setUp() e tearDown() para configurar o ambiente de teste.</li>
+                <li>Assertivas: Métodos para verificar condições, como assertEquals(), assertTrue(), assertNull(), entre outros.</li>
+                <li>Stubs e Mocks: Objetos simulados para testar componentes isoladamente.</li>
+            </ul>
+            
+            <h3>Exemplo prático</h3>
+            <p>Vamos criar um exemplo prático de teste unitário com PHPUnit para uma classe simples de calculadora</p>
+            
+            <h4>Código da Calculadora</h4>
+            <code>
+                ?php
+                class Calculator
+                {
+                    public function add($a, $b)
+                    {
+                        return $a + $b;
+                    }
+                    public function subtract($a, $b)
+                    {
+                        return $a - $b;
+                    }
+                }
+            </code>
+
+            <h4>Teste unitário da Calculadora</h4>
+            <code>
+                ?php
+                
+                use PHPUnit\Framework\TestCase;
+                
+                
+                class CalculatorTest extends TestCase
+                {
+                    protected $calculator;
+                
+                
+                    protected function setUp(): void
+                    {
+                        $this->calculator = new Calculator();
+                    }
+                
+                
+                    public function testAdd()
+                    {
+                        $result = $this->calculator->add(2, 3);
+                        $this->assertEquals(5, $result);
+                    }
+                
+                
+                    public function testSubtract()
+                    {
+                        $result = $this->calculator->subtract(5, 3);
+                        $this->assertEquals(2, $result);
+                    }
+                }
+            </code>
+            
+            <h3>Conclusão</h3>
+            <p>A automação de testes com PHPUnit é uma prática essencial para garantir a qualidade e a confiabilidade do seu código PHP. Ela permite a identificação precoce de defeitos, facilita a manutenção e proporciona confiança nas alterações e novas funcionalidades. Integrar PHPUnit no seu fluxo de desenvolvimento pode transformar a maneira como você escreve e testa seu código, resultando em um software mais robusto e de alta qualidade.</p>
+            
+
         </div>
     </section>
     <!-- Rodapé -->
