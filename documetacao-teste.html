@@ -6,6 +6,16 @@
     <title>Blog de Tecnologia e Engenharia de Software</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/qualidade-software.css">
+    <style>
+        .box-document{
+            background-color: rgb(201, 201, 201);
+            padding: 1.2em;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -46,10 +56,134 @@
                 <li><strong>Documentação de defeitos:</strong> A documentação de defeitos registra os problemas encontrados durante os testes.</li>
             </ul>
 
+            <div class="box-document">
+                <h2>Nosso Roteiro de teste</h2>
+                <h3>Teste da Página Inicial</h3>
+                <p class="objetivo">Objetivo: Verificar se todos os elementos (texto, imagens, links) estão presentes e corretos na página inicial</p>
+                <p>Navegar para a página inicial do site.</p>
+                <p>Verificar a presença do texto introdutório sobre o curso de testes de sistemas.</p>
+                <p>Verificar a presença de imagens relacionadas.</p>
+                <p>Verificar os links de navegação.</p>
+                <p class="resultado"><strong>Resultado Esperado:</strong> Todos os elementos estão presentes e exibidos corretamente.</p>
 
+                <h3>Teste de Responsividade da Página Inicial</h3>
+                <p class="objetivo">Objetivo: Verificar se a página inicial é responsiva em diferentes dispositivos</p>
+                <p>Acesse a página inicial em um desktop.</p>
+                <p>Acessar a página inicial em um tablet.</p>
+                <p>Acessar a página inicial em um smartphone.</p>
+                <p class="resultado"><strong>Resultado Esperado:</strong> A página inicial se adapta corretamente a todos os dispositivos.</p>
+
+                <h3>Teste Cabeçalho e Rodapé Persistentes</h3>
+                <p class="objetivo">Objetivo: Verificar se o cabeçalho e o rodapé são exibidos corretamente em todas as páginas</p>
+                <p>Navegar para a página inicial.</p>
+                <p>Navegar para cada sub-página listada no menu.</p>
+                <p class="resultado"><strong>Resultado Esperado:</strong> O cabeçalho e o rodapé são exibidos corretamente em todas as páginas.</p>
+
+                <h3>Teste do Menu Persistente</h3>
+                <p class="objetivo">Objetivo: Verificar se o menu é exibido corretamente em todas as páginas e se todos os links funcionam</p>
+                <p>Navegar para a página inicial.</p>
+                <p>Navegar para cada sub-página usando o menu.</p>
+                <p>Verifique se todos os links do menu direcionam corretamente.</p>
+                <p class="resultado"><strong>Resultado Esperado:</strong> O menu é exibido corretamente e todos os links funcionam.</p>
+
+                <h3>Teste das Subpáginas</h3>
+                <p class="objetivo">Objetivo: Verificar se o conteúdo da página "Qualidade de Software" está correto</p>
+                <p>Navegar para a página "Qualidade de Software".</p>
+                <p>Verificar o texto explicativo e exemplos.</p>
+                <p class="resultado"><strong>Resultado Esperado:</strong> O conteúdo está correto e bem formatado.</p>
+
+                <p class="objetivo">Objetivo: Verificar se o conteúdo da página "Teste de Software" está correto</p>
+
+                <p>Navegar para a página "Teste de Software".</p>
+                <p>Verificar o texto explicativo.</p>
+                <p class="resultado"><strong>Resultado Esperado:</strong> O conteúdo está correto e bem formatado.</p>
+
+                <p class="objetivo">Objetivo: Verificar se o conteúdo da página "Planejamento de teste" está correto</p>
+
+                <p>Navegar para a página "Planejamento de teste".</p>
+                <p>Verificar o texto explicativo sobre como funciona o planejamento de teste.</p>
+                <p class="resultado"><strong>Resultado Esperado:</strong> O conteúdo está correto e bem formatado.</p>
+
+                <p class="objetivo">Objetivo: Verificar se o conteúdo da página "Documentação de teste" está correto</p>
+                <p>Navegar para a página "Documentação de tested".</p>
+                <p>Verificar o texto explicativo e exemplos.</p>
+                <p class="resultado"><strong>Resultado Esperado:</strong> O conteúdo está correto e bem formatado.</p>
+
+                <p class="objetivo">Objetivo: Verificar se o conteúdo da página "Automação de teste" está correto</p>
+                <p>Navegar para a página "Automação de teste".</p>
+                <p>Verificar o texto explicativo e exemplos.</p>
+                <p class="resultado"><strong>Resultado Esperado:</strong> O conteúdo está correto e bem formatado.</p>
+
+                <h3>Verificação</h3>
+                <p>Conferir se todos os testes foram executados conforme os passos definidos.</p>
+                <p>Registrar resultados e qualquer discrepância encontrada.</p>
+
+                <h2>Conclusão</h2>
+                <p>Analisar resultados e corrigir falhas detectadas.</p>
+                <p>Validar se todos os requisitos funcionais e não-funcionais foram atendidos.</p>
+            </div>
+
+            <div class="box-document">
+                <h2>Nosso Casos de teste</h2>
+              
+                <h3>Cenário 1: Página Inicial</h3>
+                <p>Descrição: Verificar se todos os elementos (texto, imagens, links) estão presentes e corretos na página inicial</p>
+                <p>Navegar para a página inicial do site.</p>
+                <p>Verificar a presença do texto introdutório sobre o curso de testes de sistemas.</p>
+                <p>Verificar a presença de imagens relacionadas.</p>
+                <p>Verificar os links de navegação.</p>
+                <p>Resultado Esperado: Todos os elementos estão presentes e exibidos corretamente.</p>
+              
+                <h3>Cenário 2: Teste de Responsividade da Página Inicial</h3>
+                <p>Descrição: Verificar se a página inicial é responsiva em diferentes dispositivos</p>
+                <p>Acesse a página inicial em um desktop.</p>
+                <p>Acessar a página inicial em um tablet.</p>
+                <p>Acessar a página inicial em um smartphone.</p>
+              
+                <h3>Cenário 3: Cabeçalho e Rodapé Persistentes</h3>
+                <p>Descrição: Verificar se o cabeçalho e o rodapé são exibidos corretamente em todas as páginas</p>
+                <p>Navegar para a página inicial.</p>
+                <p>Navegar para cada sub-página listada no menu.</p>
+                <p>Resultado Esperado: O cabeçalho e o rodapé são exibidos corretamente em todas as páginas.</p>
+              
+                <h3>Cenário 4: Menu Persistente</h3>
+                <p>Descrição: Verificar se o menu é exibido corretamente em todas as páginas e se todos os links funcionam</p>
+                <p>Navegar para a página inicial.</p>
+                <p>Navegar para cada sub-página usando o menu.</p>
+                <p>Verifique se o menu está presente em todas as páginas.</p>
+                <p>Verifique se todos os links do menu direcionam corretamente.</p>
+              
+                <h3>Cenário 5: Subpáginas</h3>
+                <p>Descrição: Verificar se o conteúdo da página "Qualidade de Software" está correto</p>
+                <p>Navegar para a página "Qualidade de Software".</p>
+                <p>Verificar o texto explicativo e exemplos.</p>
+              
+                <p>Descrição: Verificar se o conteúdo da página "Teste de Software" está correto</p>
+                <p>Navegar para a página "Teste de Software".</p>
+                <p>Verificar o texto explicativo.</p>
+              
+                <p>Descrição: Verificar se o conteúdo da página "Planejamento de teste" está correto</p>
+                <p>Navegar para a página "Planejamento de teste".</p>
+                <p>Verificar o texto explicativo sobre como funciona o planejamento de teste.</p>
+              
+                <p>Descrição: Verificar se o conteúdo da página "Documentação de teste" está correto</p>
+                <p>Navegar para a página "Documentação de teste".</p>
+                <p>Verificar o texto explicativo e exemplos.</p>
+              
+                <p>Descrição: Verificar se o conteúdo da página "Automação de teste" está correto</p>
+                <p>Navegar para a página "Automação de teste".</p>
+                <p>Verificar o texto explicativo e exemplos.</p>
+              
+                <h3>Verificação</h3>
+                <p>Conferir se todos os testes foram executados conforme os passos definidos.</p>
+                <p>Registrar resultados e qualquer discrepância encontrada.</p>
+              
+                <h2>Conclusão</h2>
+                <p>Analisar resultados e corrigir falhas detectadas.</p>
+                <p>Validar se todos os requisitos funcionais e não-funcionais foram atendidos.</p>
+            </div>
         </div>
     </section>    
-    <!-- Rodapé -->
     <footer>
         <div class="container">
             <div class="footer-info">
